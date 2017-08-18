@@ -178,7 +178,7 @@ class Message(AttrDict):
      
     """
     def __init__(self, folder, id, data):
-        assert is_sha1(id), 'Message id not a SHA1 hash'
+        #assert is_sha1(id), 'Message id not a SHA1 hash'
         self.folder = folder
         self.id = id
         super(AttrDict, self).__init__(data)
